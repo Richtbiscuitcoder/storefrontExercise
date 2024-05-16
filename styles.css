@@ -1,0 +1,63 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: Geneva, sans-serif;
+    font-weight: lighter;
+}
+
+.checkboxes {
+    position: absolute;
+    width: 200px;
+    left: 50px;
+}
+
+.tile-box {
+    height: 950px;
+    width: 900px;
+    margin-left: 400px;
+    right: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-box {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    height: 300px;
+    width: 200px;
+    padding-bottom: 30px;
+    margin: 10px;
+}
+
+.product-info {
+    display: grid;
+    padding: 5px;
+}
+
+.product-page {
+    height: 950px;
+    width: 900px;
+    margin-left: 400px;
+    right: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .tile-box {
+        display: grid;
+        position: absolute;
+        left: -10px;
+    }
+    .checkbox {
+        width: 300px;
+        margin-left: 10px;
+    }
+}
