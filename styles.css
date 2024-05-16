@@ -40,15 +40,21 @@ body {
 }
 
 .product-page {
-    height: 950px;
-    width: 900px;
-    margin-left: 400px;
-    right: 20%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    width: 800px;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+
+    font-size: large;
 }
 
-
+h1 {
+    font-size: 50px;
+}
+h3 {
+    font-size: 30px;
+}
 
 @media screen and (max-width: 1200px) {
     .tile-box {

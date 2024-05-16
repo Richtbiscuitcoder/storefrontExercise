@@ -26,10 +26,11 @@ class Product
     public function getProductPage(): string
     {
         return
-            "<div class='product-page'>
-                <img src='$this->image' alt='upclose shot of product'>
-                <h3>$this->title</h3>
-                <h3>$this->price</h3>
+            "
+            <img src='$this->image' alt='upclose shot of product' height='900' width='900'>
+            <div class='product-page'>
+                <h1>$this->title</h1>
+                <h3>$$this->price.00</h3>
                 <p>$this->description</p>
             </div>";
     }

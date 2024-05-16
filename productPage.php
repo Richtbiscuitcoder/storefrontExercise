@@ -17,7 +17,7 @@ $product = ProductModel::getProduct($_GET['id'], $db);
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div>
+        <div class="container">
             <?php
                 echo $product->getProductPage();
             ?>
