@@ -26,6 +26,7 @@ class ProductModel
     }
     public static function getProduct($id, PDO $db): Product
     {
+
         $query = $db->prepare("SELECT `title`, `price`, `image`, `description`, `id` FROM `products` WHERE `id` = :id;");
         $query->execute(['id' => $id]);
         $query->setFetchMode(PDO::FETCH_CLASS, Product::class);

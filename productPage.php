@@ -2,6 +2,7 @@
 require_once 'src/factory/PDOFactory.php';
 require_once 'src/models/ProductModel.php';
 require_once 'src/Entities/Product.php';
+
 $db = PdoFactory::connect();
 $product = ProductModel::getProduct($_GET['id'], $db);
 
