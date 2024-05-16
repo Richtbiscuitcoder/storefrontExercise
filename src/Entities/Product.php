@@ -6,7 +6,6 @@ class Product
     private float $price;
     private string $image;
 
-
     private string $description;
     private string $id;
 
@@ -26,8 +25,9 @@ class Product
     public function getProductPage(): string
     {
         return
-            "
-            <img src='$this->image' alt='upclose shot of product' height='900' width='900'>
+            "<div class='image'>
+                <img src='$this->image' alt='upclose shot of product'>
+            </div>
             <div class='product-page'>
                 <h1>$this->title</h1>
                 <h3>$$this->price.00</h3>

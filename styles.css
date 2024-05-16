@@ -41,13 +41,13 @@ body {
 
 .product-page {
     display: grid;
-    width: 800px;
+    width: 900px;
     position: absolute;
     top: 20px;
-    right: 70px;
-
+    right: 100px;
     font-size: large;
 }
+
 
 h1 {
     font-size: 50px;
@@ -56,7 +56,7 @@ h3 {
     font-size: 30px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
     .tile-box {
         display: grid;
         position: absolute;
@@ -66,4 +66,19 @@ h3 {
         width: 300px;
         margin-left: 10px;
     }
+    .product-page {
+        display: grid;
+        width: 550px;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        font-size: large;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+
 }
