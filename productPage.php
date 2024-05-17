@@ -31,6 +31,9 @@ if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
                     echo $product->getProductPage();
                 }
             ?>
+            <a href="index.php">
+                <button>Back</button>
+            </a>
 
         </div>
     </body>

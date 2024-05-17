@@ -63,6 +63,16 @@ a {
     font-weight: normal;
 }
 
+button {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 500px;
+    right: 500px;
+    font-size: large;
+}
+
+
 h1 {
     font-size: 30px;
     font-weight: lighter;
