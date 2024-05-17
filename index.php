@@ -41,6 +41,7 @@ $category_details = ProductModel::categoryChecklist($db)
             echo '</div>';
 
             ?>
+            <a href="Form.php"><button class="button">Create your own product!</button></a>
         </div>
     </body>
 </html>
