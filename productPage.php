@@ -5,9 +5,15 @@ require_once 'src/Entities/Product.php';
 
 $db = PdoFactory::connect();
 $error = false;
-
+$product = "";
 if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
-    $product = ProductModel::getProduct($_GET['id'], $db);
+    if ($_GET['id'] > 0 && ($_GET['id'] < 17)) {
+        $product = ProductModel::getProduct($_GET['id'], $db);
+    } else {
+        $error = "This is not the page you are looking for";
+    }
+} else {
+    $error = "This is not the page you are looking for";
 }
 
 ?>
@@ -25,10 +31,10 @@ if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
         <div>
             <?php
 
-                if ($error) {
-                    echo $error;
-                } else {
+                if ($product)  {
                     echo $product->getProductPage();
+                } else {
+                    echo $error;
                 }
             ?>
             <a href="index.php">

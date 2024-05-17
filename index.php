@@ -9,7 +9,6 @@ require_once 'src/Entities/Characters.php';
 
 $db = PdoFactory::connect();
 $products = ProductModel::getProducts($db);
-$image = ProductModel::getProducts($db);
 $character_details = ProductModel::characterChecklist($db);
 $category_details = ProductModel::categoryChecklist($db)
 
@@ -28,7 +27,7 @@ $category_details = ProductModel::categoryChecklist($db)
         <div class="tile-box">
             <?php
             foreach ($products as $product) {
-                echo $product->getProducts();
+                echo $product->getDisplay();
             }
             echo '<div class="checkboxes">';
             echo '<h1>Categories</h1>';
