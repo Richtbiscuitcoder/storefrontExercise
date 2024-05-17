@@ -1,8 +1,8 @@
 
 
 <?php
-require_once 'src/factory/PDOFactory.php';
-require_once 'src/models/ProductModel.php';
+require_once 'src/Factory/PDOFactory.php';
+require_once 'src/Models/ProductModel.php';
 require_once 'src/Entities/Product.php';
 require_once 'src/Entities/Categories.php';
 require_once 'src/Entities/Characters.php';

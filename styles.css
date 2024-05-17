@@ -5,8 +5,8 @@
 
 body {
     background: white;
-    font-family: Geneva, sans-serif;
-    font-weight: lighter;
+    font-family: "monospace", sans-serif;
+
 }
 
 .checkboxes {
@@ -17,19 +17,21 @@ body {
 
 .tile-box {
     height: 950px;
-    width: 900px;
+    width: 1200px;
     margin-left: 400px;
     right: 20%;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .product-box {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 300px;
-    width: 200px;
+    height: 350px;
+    width: 250px;
     padding-bottom: 30px;
     margin: 10px;
 }
@@ -40,7 +42,8 @@ body {
 }
 
 .product-page {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 900px;
     position: absolute;
     top: 20px;
@@ -48,31 +51,83 @@ body {
     font-size: large;
 }
 
+p {
+    font-weight: lighter;
+    font-size: 19px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    font-weight: normal;
+}
 
 h1 {
-    font-size: 50px;
+    font-size: 30px;
+    font-weight: lighter;
 }
+h2 {
+    font-weight: normal
+;
+    font-size: 40px;
+}
+
 h3 {
     font-size: 30px;
+    font-weight: normal;
+}
+
+label {
+    font-weight: lighter;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #1B1B1B;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+
+input[type="checkbox"]:checked {
+    background-color: #1B1B1B;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✓';
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 3px;
 }
 
 @media screen and (max-width: 1500px) {
     .tile-box {
-        display: grid;
-        position: absolute;
-        left: -10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        left: 100px;
+        height: 100%;
+        width: 50%;
     }
     .checkbox {
         width: 300px;
         margin-left: 10px;
     }
     .product-page {
-        display: grid;
+        display: flex;
         width: 550px;
-        position: absolute;
-        top: 20px;
-        right: 0px;
+        flex-wrap: wrap;
+        flex-direction: column;
         font-size: large;
+        top: 800px;
+        left: 100px;
     }
     h1 {
         font-size: 30px;
