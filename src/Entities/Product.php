@@ -1,11 +1,10 @@
 <?php
 
-class Product
+class  Product
 {
     private string $title;
     private float $price;
     private string $image;
-
     private string $description;
     private string $id;
 

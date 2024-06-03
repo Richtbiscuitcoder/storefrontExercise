@@ -8,7 +8,7 @@ require_once 'src/Entities/Categories.php';
 require_once 'src/Entities/Characters.php';
 
 $db = PdoFactory::connect();
-$products = ProductModel::getProducts($db);
+$products = ProductModel::getProductsByCategoryId($db);
 $character_details = ProductModel::characterChecklist($db);
 $category_details = ProductModel::categoryChecklist($db)
 
